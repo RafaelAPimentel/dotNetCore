@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartyInvites", "PartyInvites\PartyInvites.csproj", "{917AA593-9EC2-4AB7-B29A-049CD47582DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{917AA593-9EC2-4AB7-B29A-049CD47582DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917AA593-9EC2-4AB7-B29A-049CD47582DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917AA593-9EC2-4AB7-B29A-049CD47582DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917AA593-9EC2-4AB7-B29A-049CD47582DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B19F700-8266-40D6-8C23-8932908C8923}
+	EndGlobalSection
+EndGlobal
