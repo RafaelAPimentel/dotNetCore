@@ -26,10 +26,12 @@ namespace HATEOAS.Controllers
             var result = new ResourceList<PersonDto>(people);
             result.Items.ForEach(p =>
             {
-                p.Links.Add(new Link("self", Url.Link("get-people", new { id = p.Id }), "GET"));
-                p.Links.Add(new Link("get-person", Url.Link("get-person", new { id = p.Id }), "GET"));
+                IEnumerable<Link> links = new List<Link>{   new Link("self", Url.Link("get-people", new { id = p.Id }), "GET"), 
+                                                            new Link("get-person", Url.Link("get-person", new { id = p.Id }), "GET")}.AsEnumerable();
+                p.Links.AddRange(links);
             });
-             result.Links.Add(new Link("create-person", Url.Link("create-person", null), "POST"));
+            var link = new Link("create-person", Url.Link("create-person", null), "POST");
+            result.Links.Add(link);
 
             return Ok(result);
         }
